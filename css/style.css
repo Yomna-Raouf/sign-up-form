@@ -75,7 +75,7 @@
 .form-container {
     display: flex;
     width: 800px;
-    height: 600px;
+    height: 640px;
     position: absolute;
     top:50%;
     left: 50%;
@@ -89,7 +89,7 @@
 .sign-up-form {
     width: 50%;
     background-color: #232328;
-    padding: 120px 50px;
+    padding: 50px 50px;
     box-sizing: border-box;
 }
 
@@ -169,7 +169,7 @@
 
 .sign-up-form button {
     display: block;
-    margin-top: 80px;
+    margin-top: 50px;
     width: 150px;
     padding: 8px 5px;
     background-color: transparent;
@@ -255,10 +255,16 @@
 
     .sign-up-form button {
         margin-top: 50px;
-        width: 120px;
+        width: 100px;
         padding: 6px 4px;
-        font-size: 13px;
-        border-width: 1px;
+        font-size: 11px;
+        border-width: 1px; 
+        margin-left: 20px;
+    }
+
+    .sign-up-form input[type="checkbox"], .sign-up-form button {
+        display: inline-block;
+        margin-top: -20px;
     }
 
     .header h1 {
@@ -286,6 +292,7 @@
         width: 150px;
         padding: 10px;
         font-size: 15px;
+
     }
 }
 
