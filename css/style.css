@@ -108,6 +108,18 @@
     padding: 10px 0;
     transition: border-bottom-color .8s;
 }
+.form-input.error {
+    border-bottom: 2px solid #e74c3c;
+}
+
+.form-input.success {
+   border-bottom: 2px solid #2ecc71; 
+}
+
+.form-input.error + small {
+    opacity: 1;
+    visibility: visible;
+}
 
 .form-input:focus {
     border-bottom-color: rgb(56, 125, 160);
@@ -162,7 +174,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, .4);
     transition: left .5s;
 }
-.sign-up-form small {
+.form-input + small {
     position: absolute;
     display: block;
     margin-top: -45px;
