@@ -17,21 +17,42 @@ const password = document.querySelector('#userPassword');
 const confirmedPassword = document.querySelector('#confirmedPassword');
 
 function showError(input, message) {
-	const formInput = input;
-	formInput.className = 'form-input error';
-	document.querySelector('small').innerText = message;
+	const signUpForm = input.parentElement;
+	signUpForm.className = 'form-control error';
+	const small = signUpForm.querySelector('small');
+	small.innerText = message;
+
 }
 
 function showSuccess(input) {
-	const formInput = input;
-	formInput.className = 'form-input success';
+	const signUpForm = input.parentElement;
+	signUpForm.className = 'form-control success';
 }
 
 form.addEventListener('submit', function(e) {
 	e.preventDefault();
+
 	if (userName.value === '') {
 		showError(userName, 'userName is required');
 	}else {
 		showSuccess(userName);
+	}
+
+	if (email.value === '') {
+		showError(email, 'E-mail is required');
+	}else {
+		showSuccess(email);
+	}
+
+	if (password.value === '') {
+		showError(password, 'password is required');
+	}else {
+		showSuccess(password);
+	}
+
+	if (confirmedPassword.value === '') {
+		showError(confirmedPassword, 'password Confirmation is required');
+	}else {
+		showSuccess(confirmedPassword);
 	}
 });

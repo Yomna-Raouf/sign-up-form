@@ -21,15 +21,23 @@
         </div>
 
         <div class="form-container">
-            <form class="sign-up-form">
-                <input type="text" id='username' class="form-input" placeholder="FULL NAME">
-                <small>Error Message</small>
-                <input type="email" id="userEmail" class="form-input" placeholder="EMAIL ADDRESS">
-                <small>Error Message</small>
-                <input type="password" id="userPassword" class="form-input" placeholder="Enter Password">
-                <small>Error Message</small>
-                <input type="password" id="confirmedPassword" class="form-input" placeholder="confirm Password">
-                <small>Error Message</small>
+            <form action="post" class="sign-up-form">
+                <div class="form-control"> 
+                    <input type="text" id='username' class="form-input" placeholder="FULL NAME">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <input type="email" id="userEmail" class="form-input" placeholder="EMAIL ADDRESS">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <input type="password" id="userPassword" class="form-input" placeholder="Enter Password">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <input type="password" id="confirmedPassword" class="form-input" placeholder="confirm Password">
+                    <small>Error Message</small>
+                </div>
                 <p>Get News?</p>
                 <label>No</label>
                 <input type="checkbox">
